@@ -51,4 +51,14 @@ GROUP BY from_stop, to_stop, from_sequence, to_sequence
 ORDER BY from_sequence;
 ```
 
+The purpose of this SQL query is to calculate the average travel time between every pair of consecutive stops across all trips in a GTFS time_stop table. 
+
+
+![sql_data](./screenshots/sql_data.png) 
+
+This image is a section from the sql_time_stop dataset.
+
+## Outputs
+![heatmap](./screenshots/heatmap.png)   
+![cluster](./screenshots/cluster.png)
 
