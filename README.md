@@ -4,7 +4,7 @@ This project analyses scheduled travel times between consecutive bus stops using
 ![route](./screenshots/route.png)  
 
 ## Dataset 
-The dataset is manually created based on real-time scheduled timetable information. The timetable data is sourced from bustimes.org.
+The dataset is manually created based on real-time scheduled timetable information. The timetable data is sourced from bustimes.org.   
 Rows: 71   
 Key Fields: 
 - trip_id
