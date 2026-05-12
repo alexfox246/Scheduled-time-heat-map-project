@@ -1,7 +1,7 @@
 # Scheduled-time-heat-map-project
 This project analyses scheduled travel times between consecutive bus stops using GTFS-style stop-times data. The bus route I will analyse is the 84 arriva service which runs from Lutterworth to Leicester. I will identify which segments of service 84 take the longest time according to the timetable, and highlight slow sections using a heat map. The goal is to understand the timetable structure and reduce average travel minutes while maintaining a realistic and operationally deliverable timetable. The 84 bus service route runs from Lutterworth to Leicester.
 
-!(./screenshots/route.png) 
+![route](./Screenshots/route.png)  
 
 ## Dataset 
 The dataset is manually created based on real-time scheduled timetable information. The timetable data is sourced from bustimes.org.
