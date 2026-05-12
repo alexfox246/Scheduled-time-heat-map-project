@@ -13,10 +13,42 @@ Key Fields:
 - stop_name
 - departure_time
 
-This image shows a small section of time_stop dataset.
-![initial_data](./screenshots/initial_data.png) 
-
 ## Methodology
 I built a stop_times table in excel using real-time data. The table includes trip_id, stop_sequence, stop_id, stop_name and departure time. The purpose of this stage is to tranform the raw CSV file into clean, reliable, analysis-ready data. The data cleaning process included duplicate checks, data type correction and categorical standardisation.   
+
+![initial_data](./screenshots/initial_data.png)   
+
+This image is just a section of the time_stop dataset.   
 The data is now ready to be exported as a CSV and uploaded into BigQuery.
+
+## SQL Query
+```sql
+WITH segs AS (
+  SELECT
+    trip_id,
+    stop_sequence,
+    stop_id,
+    stop_name,
+    departure_time,
+    LAG(stop_id) OVER (PARTITION BY trip_id ORDER BY stop_sequence) AS prev_stop_id,
+    LAG(stop_name) OVER (PARTITION BY trip_id ORDER BY stop_sequence) AS prev_stop_name,
+    LAG(stop_sequence) OVER (PARTITION BY trip_id ORDER BY stop_sequence) AS prev_stop_sequence,
+    LAG(departure_time) OVER (PARTITION BY trip_id ORDER BY stop_sequence) AS prev_departure
+  FROM `project-2-496116.stop_times.timetable`
+)
+
+SELECT
+  prev_stop_name AS from_stop,
+  stop_name AS to_stop,
+  prev_stop_sequence AS from_sequence,
+  stop_sequence AS to_sequence,
+  AVG(
+    TIME_DIFF(departure_time, prev_departure, MINUTE)
+  ) AS avg_travel_minutes
+FROM segs
+WHERE prev_stop_id IS NOT NULL
+GROUP BY from_stop, to_stop, from_sequence, to_sequence
+ORDER BY from_sequence;
+```
+
 
