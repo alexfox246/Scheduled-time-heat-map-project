@@ -62,3 +62,26 @@ This image is a section from the sql_time_stop dataset.
 ![heatmap](./screenshots/heatmap.png)   
 ![cluster](./screenshots/cluster.png)
 
+The scheduled travel time heatmap highlights how scheduled journey times vary between consecutive stops along the route. Longer segment times do not necessarily indicate congestion or delay - in many cases, they simply reflect longer distances between stops. The pattern of colours in the heatmap shows that some segments require more time thatn others. These are typically longer inter-stop distanaces or sections where the bus travels on faster roads with fewer intermediate stops. Shorter scheduled times often occur in dense urban areas with closely spaced stops, even if traffic conditions are more variable.  The heatmap therefore provides a clear picture of where the timetable allocates more or less time, helping identify whether the distribution of scheduled minutes aligns with the pysical layout of the route.
+
+## Insights
+### key results
+- Total stops analysed: 71
+- Total segments: 70
+- Slowest segment: Lutterworth, Oakberry Road to Dunton Bassett, Lutterworth Road (7 minutes)
+- Fastest segment: multiple results.
+- Average sement time: 1 minute 15.42 seconds
+- Number of segments > 2 minutes: 53
+
+### Interpretations
+- Longer scheduled segment times often reflect longer distances, not inefficiency.
+- Some short segments have disproportionaly higher schedules minuted, indicating potential over-allocation of time.
+- The heatmap reveals where the timetable may include excess padding that could be redistributed or reduced.
+- Uneven distribution of scheduled minuted suggests there are opportunities to rebalance the timetable to improve overall efficiency.
+
+## Recommendations:
+- Identify short segments with high scheduled minutes.
+- During off peak service times cut off specific routes in less demanded areas such as Broughton Astley and Whetstone.
+- Review junction heavy segments such as Leicester, Royal infirmary hostpital. This areas has multiple short distance segments so a strategic restructure of stops could improve efficiency.
+- Increase number of services per hour during peak times. There is currently one service from Lutterworth to Leicester active every hour. Increasing this to one every 20 or 30 minutes will sigificantly reduce demand per bus resulting in less stops a driver has to make.
+
