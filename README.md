@@ -1,5 +1,5 @@
 # Scheduled-time-heat-map-project
-This project analyses scheduled travel times between consecutive bus stops using GTFS-style stop-times data. The bus route I will analyse is the 84 arriva service which runs from Lutterworth to Leicester. I will identify which segments of service 84 take the longest time according to the timetable, and highlight slow sections using a heat map. The goal is to understand the timetable structure and reduce average travel minutes while maintaining a realistic and operationally deliverable timetable. The 84 bus service route runs from Lutterworth to Leicester.
+This project analyses scheduled travel times between consecutive bus stops using GTFS-style stop-times data. The bus route I will analyse is the 84 arriva service which runs from Lutterworth to Leicester. I will identify which segments of service 84 take the longest time according to the timetable, and highlight slow sections using a heat map. The goal is to understand the timetable structure and reduce average travel minutes while maintaining a realistic and operationally deliverable timetable. 
 
 ![route](./screenshots/route.png)  
 
@@ -12,6 +12,9 @@ Key Fields:
 - stop_id
 - stop_name
 - departure_time
+
+This image shows a small section of time_stop dataset.
+![initial_data](./screenshots/initial_data.png) 
 
 ## Methodology
 I built a stop_times table in excel using real-time data. The table includes trip_id, stop_sequence, stop_id, stop_name and departure time. The purpose of this stage is to tranform the raw CSV file into clean, reliable, analysis-ready data. The data cleaning process included duplicate checks, data type correction and categorical standardisation.   
