@@ -85,3 +85,4 @@ The scheduled travel time heatmap highlights how scheduled journey times vary be
 - Review junction heavy segments such as Leicester, Royal infirmary hostpital. This areas has multiple short distance segments so a strategic restructure of stops could improve efficiency.
 - Increase number of services per hour during peak times. There is currently one service from Lutterworth to Leicester active every hour. Increasing this to one every 20 or 30 minutes will sigificantly reduce demand per bus resulting in less stops a driver has to make. 
 
+Thank you for reading. Kindly contact me for any discussion on projects or job offers on: Email: alexfox246@yahoo.com Phone: 07480215827
