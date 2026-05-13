@@ -79,7 +79,7 @@ The scheduled travel time heatmap highlights how scheduled journey times vary be
 - The heatmap reveals where the timetable may include excess stoppages that could be redistributed or reduced.
 - Uneven distribution of scheduled minuted suggests there are opportunities to rebalance the timetable to improve overall efficiency.
 
-## Recommendations:
+## Recommendations
 - Identify short segments with high scheduled minutes.
 - During off peak service times cut off specific routes in less demanded areas such as Broughton Astley and Whetstone.
 - Review junction heavy segments such as Leicester, Royal infirmary hostpital. This areas has multiple short distance segments so a strategic restructure of stops could improve efficiency.
